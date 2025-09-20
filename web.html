@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="icon" href="images/favicon.png" type="image/png"> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+    <img src="food.jpg" alt="Delicious Bites Logo">
+    <h1>Foodie</h1>
+</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="food.jpg" alt="Delicious Food 1">
+                <div class="hero-content">
+                    <h2>Savor the Flavor</h2>
+                    <p>Experience exquisite dishes crafted with passion.</p>
+                    <a href="#menu" class="btn">View Our Menu</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero-2.jpg" alt="Delicious Food 2">
+                <div class="hero-content">
+                    <h2>Fresh Ingredients, Great Taste</h2>
+                    <p>We use only the freshest, local ingredients.</p>
+                    <a href="#featured" class="btn">Discover Specials</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero-3.jpg" alt="Delicious Food 3">
+                <div class="hero-content">
+                    <h2>Your Culinary Journey Starts Here</h2>
+                    <p>From appetizers to desserts, a feast awaits you.</p>
+                    <a href="#contact" class="btn">Book a Table</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-dishes section-padding">
+        <div class="container">
+            <h2>Our Featured Dishes</h2>
+            <div class="dish-grid">
+                <div class="dish-item">
+                    <img src="images/dish-1.jpg" alt="Spicy Noodles">
+                    <h3>Spicy Dragon Noodles</h3>
+                    <p>A fiery blend of noodles, vegetables, and exotic spices.</p>
+                    <span class="price">79</span>
+                    <button class="add-to-cart-btn" data-item="Spicy Dragon Noodles" data-price="14.99">Add to Cart</button>
+                </div>
+                <div class="dish-item">
+                    <img src="images/dish-2.jpg" alt="Gourmet Burger">
+                    <h3>Classic Gourmet Burger</h3>
+                    <p>Juicy patty, fresh veggies, and our secret sauce.</p>
+                    <span class="price">149</span>
+                    <button class="add-to-cart-btn" data-item="Classic Gourmet Burger" data-price="12.50">Add to Cart</button>
+                </div>
+                <div class="dish-item">
+                    <img src="images/dish-3.jpg" alt="Berry Cheesecake">
+                    <h3>Berry Bliss Cheesecake</h3>
+                    <p>Creamy cheesecake topped with fresh mixed berries.</p>
+                    <span class="price">499</span>
+                    <button class="add-to-cart-btn" data-item="Berry Bliss Cheesecake" data-price="8.75">Add to Cart</button>
+                </div>
+                <div class="dish-item">
+                    <img src="images/dish-4.jpg" alt="Veggie Pizza">
+                    <h3>Garden Fresh Pizza</h3>
+                    <p>Loaded with seasonal vegetables and mozzarella cheese.</p>
+                    <span class="price">199</span>
+                    <button class="add-to-cart-btn" data-item="Garden Fresh Pizza" data-price="16.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section section-padding">
+        <div class="container">
+            <h2>Explore Our Full Menu</h2>
+            <p class="menu-intro">From traditional favorites to innovative creations, our menu offers something for every palate.</p>
+            <div class="menu-categories">
+                <button class="menu-category-btn active" data-category="all">All</button>
+                <button class="menu-category-btn" data-category="appetizers">Appetizers</button>
+                <button class="menu-category-btn" data-category="main-courses">Main Courses</button>
+                <button class="menu-category-btn" data-category="desserts">Desserts</button>
+                <button class="menu-category-btn" data-category="beverages">Beverages</button>
+            </div>
+            <div class="menu-items-grid">
+                <div class="menu-item" data-category="appetizers">
+                    <h4>Crispy Spring Rolls</h4>
+                    <p>Vegetable-filled spring rolls with sweet chili sauce.</p>
+                    <span class="price">80</span>
+                </div>
+                <div class="menu-item" data-category="appetizers">
+                    <h4>Garlic Bread with Cheese</h4>
+                    <p>Toasted bread topped with garlic butter and melted cheese.</p>
+                    <span class="price">550</span>
+                </div>
+                <div class="menu-item" data-category="main-courses">
+                    <h4>Grilled Salmon with Asparagus</h4>
+                    <p>Perfectly grilled salmon fillet with steamed asparagus.</p>
+                    <span class="price">220</span>
+                </div>
+                <div class="menu-item" data-category="main-courses">
+                    <h4>Chicken Alfredo Pasta</h4>
+                    <p>Creamy Alfredo sauce with tender chicken and fettuccine.</p>
+                    <span class="price">150</span>
+                </div>
+                <div class="menu-item" data-category="main-courses">
+                    <h4>Vegetable Biryani</h4>
+                    <p>Aromatic basmati rice cooked with mixed vegetables and spices.</p>
+                    <span class="price">150</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>Warm chocolate cake with a molten chocolate center.</p>
+                    <span class="price">900</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <h4>Tiramisu</h4>
+                    <p>Classic Italian dessert with coffee-soaked ladyfingers.</p>
+                    <span class="price">850</span>
+                </div>
+                 <div class="menu-item" data-category="beverages">
+                    <h4>Fresh Orange Juice</h4>
+                    <p>Freshly squeezed orange juice.</p>
+                    <span class="price">400</span>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <h4>Iced Latte</h4>
+                    <p>Chilled espresso with milk and ice.</p>
+                    <span class="price">300</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us section-padding">
+        <div class="container">
+            <h2>About Delicious Bites</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    
+                </div>
+                <div class="about-text">
+                    <p>At Delicious Bites, we believe that food is not just sustenance, but an experience. Our journey began with a passion for creating memorable dishes using the finest, freshest ingredients sourced locally whenever possible.</p>
+                    <p>Our team of experienced chefs, led by the renowned Chef Anand Sharma, is dedicated to bringing you a culinary adventure with every bite. We strive to offer a diverse menu that caters to various tastes and dietary preferences, all while maintaining the highest standards of quality and hygiene.</p>
+                    <p>Join us for a delightful meal and let us take you on a gastronomic journey you won't soon forget!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-us section-padding">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Culinary City, Foodland</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@deliciousbites.com</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <h3>Send Us a Message</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">&#9650;</button> <script src="script.js"></script>
+    <script src="web.js"></script>
+</body>
+</html>
